@@ -20,10 +20,11 @@ public class interview {
         /*---------------------------------------------------------------------------------*/
         //Sample way to call the function. Please READ.MD to know more about the parameters
         /*--------------------------------------------------------------------------------*/
-        //UtilLib.getCheapestCarList(response);
+
+        // UtilLib.getCheapestCarList(response);
         //UtilLib.getVehiclesByType(response, "Manual");
         //UtilLib.sortByCorporate(response, Arrays.asList("FIREFLY","HERTZ","SIXT","AVIS","BUDGET","ENTERPRISE","THRIFTY"));
-        System.out.println(UtilLib.sortByPriceInGroup(response));
+        //UtilLib.sortByPriceInGroup(response);
     }
 }
 
