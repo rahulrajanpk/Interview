@@ -101,14 +101,18 @@ public class UtilLib {
 
     public static List sortByPriceInGroup(Response response)
     {
-        ArrayList<ArrayList<Double>> carPrices = response.path("VehAvailRSCore.VehVendorAvails.VehAvails.VehAvailCore.TotalCharge.RateTotalAmount");
+        ArrayList<ArrayList<String>> carPrices = response.path("VehAvailRSCore.VehVendorAvails.VehAvails.VehAvailCore.TotalCharge.RateTotalAmount");
 
         ArrayList<List> ans = new ArrayList<>();
 
         int iterator=0;
         while(iterator<carPrices.size())
         {
-            ans.add( carPrices.get(iterator).stream().sorted().collect(Collectors.toList()));
+            ans.add( carPrices.get(iterator).stream().sorted((a,b)->{
+
+                return Float.parseFloat(a) > Float.parseFloat(b) ?1:-1;
+
+            }).collect(Collectors.toList()));
 
             iterator++;
         }

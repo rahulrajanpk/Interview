@@ -14,8 +14,8 @@ public class interview {
 
     public static void main(String[] args) {
         /* Sample way response  was fetched */
-       // Response response = RestAssured.get("http://localhost:3000/test");
-      //   JsonPath jsonPath = new JsonPath(response.asString());
+        Response response = RestAssured.get("http://localhost:3000/test");
+        JsonPath jsonPath = new JsonPath(response.asString());
 
         /*---------------------------------------------------------------------------------*/
         //Sample way to call the function. Please READ.MD to know more about the parameters
@@ -23,7 +23,7 @@ public class interview {
         //UtilLib.getCheapestCarList(response);
         //UtilLib.getVehiclesByType(response, "Manual");
         //UtilLib.sortByCorporate(response, Arrays.asList("FIREFLY","HERTZ","SIXT","AVIS","BUDGET","ENTERPRISE","THRIFTY"));
-        //UtilLib.sortByPriceInGroup(response);
+        System.out.println(UtilLib.sortByPriceInGroup(response));
     }
 }
 
