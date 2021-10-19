@@ -14,8 +14,8 @@ public class interview {
 
     public static void main(String[] args) {
         /* Sample way response  was fetched */
-        Response response = RestAssured.get("http://localhost:3000/test");
-        JsonPath jsonPath = new JsonPath(response.asString());
+       // Response response = RestAssured.get("http://localhost:3000/test");
+       // JsonPath jsonPath = new JsonPath(response.asString());
 
         /*---------------------------------------------------------------------------------*/
         //Sample way to call the function. Please READ.MD to know more about the parameters
