@@ -19,6 +19,7 @@ public class interview {
 
         /*---------------------------------------------------------------------------------*/
         //Sample way to call the function. Please READ.MD to know more about the parameters
+        // @ will not be parsed by Rest Assured
         /*--------------------------------------------------------------------------------*/
 
         // UtilLib.getCheapestCarList(response);
